@@ -33,84 +33,67 @@ The lab demonstrates how network scanning techniques impact the target system an
 
 ### Setup
 
-![W11 VM Install](screenshots/setup/W11-VM-Install.png)
-
+![W11 VM Install](screenshots/setup/W11-VM-Install.png)  
 *Installing Windows 11 on the VM — first step to create target environment.*
 
-![Sysmon Install PS](screenshots/setup/Sysmon-Install-PS.png)
-
+![Sysmon Install PS](screenshots/setup/Sysmon-Install-PS.png)  
 *Installing Sysmon via PowerShell to enable detailed event logging.*
 
-![Sysmon Install Success](screenshots/setup/Sysmon-install-success-PS.png)
-
+![Sysmon Install Success](screenshots/setup/Sysmon-install-success-PS.png)  
 *Sysmon installation verified successfully in PowerShell.*
 
-![Pen Tools Install](screenshots/setup/Pen-Tools-Install-CLI.png)
-
+![Pen Tools Install](screenshots/setup/Pen-Tools-Install-CLI.png)  
 *Installing penetration testing tools on Kali Linux.*
 
-![Internal Network Setup](screenshots/setup/Internal-Network-Setup.png)
-
+![Internal Network Setup](screenshots/setup/Internal-Network-Setup.png)  
 *Configuring isolated internal network so lab VMs can communicate without affecting the host.*
 
-![Config Static IPv4](screenshots/setup/Config-Static-IPv4.png)
-
+![Config Static IPv4](screenshots/setup/Config-Static-IPv4.png)  
 *Configuring static IP addresses for both VMs for reliable communication.*
 
-![QOL CLI Fixes](screenshots/setup/QOL-Disabling-Screen-Reader-CLI.png)
-
+![QOL CLI Fixes](screenshots/setup/QOL-Disabling-Screen-Reader-CLI.png)  
 *Quality-of-life adjustments in the VM CLI to improve usability.*
 
 ---
 
 ### Troubleshooting
 
-![IP Conflict Error](screenshots/troubleshooting/Error-Creating Static-IPs-Due-To-Conflicting-Addresses.png)
-
+![IP Conflict Error](screenshots/troubleshooting/Error-Creating-Static-IPs-Due-To-Conflicting-Addresses.png)  
 *Resolving static IP conflicts during setup.*
 
-![Failed Stealth Scans](screenshots/troubleshooting/Failed-Stealth Port-Scans-after-firewall-enabled.png)
-
+![Failed Stealth Scans](screenshots/troubleshooting/Failed-Stealth-Port-Scans-after-firewall-enabled.png)  
 *Initial stealth port scans failed due to Windows Firewall — demonstrates defensive control.*
 
-![Kali Boot Fix](screenshots/troubleshooting/Kali-Breaks-change-boot-parameters-to-fix..png)
-
+![Kali Boot Fix](screenshots/troubleshooting/Kali-Breaks-change-boot-parameters-to-fix..png)  
 *Adjusting Kali boot parameters to fix VM boot issues.*
 
-![Kali Guest Display](screenshots/troubleshooting/Kali-VM-breaks-at-guest-display.png)
-
+![Kali Guest Display](screenshots/troubleshooting/Kali-VM-breaks-at-guest-display.png)  
 *Fixing Kali VM display issues to ensure proper usability.*
 
-![IPv4 Troubleshooting](screenshots/troubleshooting/ipv4-static-addressing-troubleshooting.png)
-
+![IPv4 Troubleshooting](screenshots/troubleshooting/ipv4-static-addressing-troubleshooting.png)  
 *Troubleshooting static IPv4 addressing to ensure both VMs could communicate.*
 
 ---
 
 ### Scanning Results
 
-![Successful Ping](screenshots/scans/Successful-Ping-Between-Machines-on-Internal-network.png)
-
+![Successful Ping](screenshots/scans/Successful-Ping-Between-Machines-on-Internal-network.png)  
 *Ping test confirming network connectivity between Windows and Linux VMs.*
 
-![First Port Scan](screenshots/scans/First-successful-port-scan-after-enabling-RDP-on windows-machine.png)
-
+![First Port Scan](screenshots/scans/successful-port-scan-RDP-windows.png)  
 *First successful Nmap port scan targeting the RDP port — validates red team scanning activity.*
 
 ---
 
 ### Log Analysis
 
-![Sysmon Connection Attempts](screenshots/logs/Sysmon-Log-Connection-Attempts.png)
-
+![Sysmon Connection Attempts](screenshots/logs/Sysmon-Log-Connection-Attempts.png)  
 *Sysmon logs showing connection attempts from Linux VM — captures evidence of network scanning.*
 
-![Sysmon Running in PS](screenshots/logs/Sysmon-Running-in-PS.png)
-
+![Sysmon Running in PS](screenshots/logs/Sysmon-Running-in-PS.png)  
 *Sysmon running status verified in PowerShell.*
 
-![Sysmon Results VBox](screenshots/logs/Sysmon-Results-VBox.png)
-
+![Sysmon Results VBox](screenshots/logs/Sysmon-Results-VBox.png)  
 *Detailed Sysmon log results in Windows VM — demonstrates defender perspective.*
 
 ---
@@ -138,5 +121,4 @@ This lab was created as a personal learning project. Contributions and feedback 
 
 ---
 
-*Last updated: April 2026*
 *Last updated: April 2026*
